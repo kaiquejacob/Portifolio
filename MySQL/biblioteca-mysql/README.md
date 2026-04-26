@@ -64,44 +64,7 @@ biblioteca-mysql/
                       └─────────────┘
 ```
 
----
 
-## 🚀 Como Executar
-
-### Pré-requisitos
-- [MySQL](https://www.mysql.com/downloads/) 8.0+ instalado
-- [XAMPP](https://www.apachefriends.org/) ou [WAMP](https://www.wampserver.com/) (opcional)
-- MySQL Workbench ou phpMyAdmin (opcional, para interface visual)
-
-### Passo a passo
-
-**1. Clone o repositório:**
-```bash
-git clone https://github.com/seu-usuario/biblioteca-mysql.git
-cd biblioteca-mysql
-```
-
-**2. Acesse o MySQL pelo terminal:**
-```bash
-mysql -u root -p
-```
-
-**3. Execute o schema (cria o banco e as tabelas):**
-```bash
-source schema.sql
-```
-
-**4. Execute os dados de exemplo:**
-```bash
-source dados.sql
-```
-
-**5. Explore as queries:**
-```bash
-source queries/consultas_basicas.sql
-source queries/joins.sql
-source queries/relatorios.sql
-```
 
 ---
 
@@ -145,19 +108,6 @@ ORDER BY total_emprestimos DESC
 LIMIT 5;
 ```
 
----
-
-## 💾 Backup e Restauração
-
-**Exportar o banco de dados:**
-```bash
-mysqldump -u root -p biblioteca > backup_biblioteca.sql
-```
-
-**Restaurar o banco de dados:**
-```bash
-mysql -u root -p biblioteca < backup_biblioteca.sql
-```
 
 ---
 
@@ -182,7 +132,3 @@ Curso baseado no conteúdo do professor **Gustavo Guanabara**:
 🔗 [Curso de Banco de Dados MySQL — Curso em Vídeo](https://www.youtube.com/playlist?list=PLHz_AreHm4dkBs-795Dsgvau_ekxg8g1r)
 
 ---
-
-## 📄 Licença
-
-Este projeto é de uso livre para fins educacionais.
