@@ -1,0 +1,11 @@
+# Arquivos de backup gerados
+*.sql.bak
+backup_*.sql
+
+# Arquivos de ambiente e configuração sensível
+.env
+config.ini
+
+# Arquivos de sistema
+.DS_Store
+Thumbs.db
