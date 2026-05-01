@@ -1,10 +1,5 @@
 import java.util.Scanner;
 
-/*
-5. Simulador de caixa eletrônico
-Saldo inicial, menu com opções: sacar, depositar, ver saldo.
-Usa switch + loop para manter o menu ativo até o usuário sair.
- */
 
 class Caixa {
     private double saldo;
