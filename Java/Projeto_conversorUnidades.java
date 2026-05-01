@@ -134,7 +134,7 @@ class Conversor{
     }
 }
 public class Projeto_conversorUnidades {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Conversor conversor = new Conversor();
 
         Scanner scanner = new Scanner(System.in);
