@@ -1,10 +1,7 @@
 import java.util.Scanner;
 import java.util.Locale;
 
-/*
-Cadastro de produtos simples Array de produtos (nome, preço, quantidade),
-menu para listar, buscar por nome, mostrar o mais caro/barato. Me ajude a começar este projeto
- */
+
 class Produto {
 
     private String nome;
