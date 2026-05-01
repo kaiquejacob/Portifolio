@@ -94,7 +94,7 @@ class CadastroProdutos {
 }
 
 public class Projeto_cadastroProdutos {
-    static void main(String[] args) {
+     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         scanner.useLocale(Locale.US);
 
