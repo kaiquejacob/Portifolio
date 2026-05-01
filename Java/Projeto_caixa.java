@@ -57,7 +57,7 @@ class Caixa {
 }
 
 public class Projeto_caixa {
-    static void main(String[] args) {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         System.out.println("Digite o saldo: ");
