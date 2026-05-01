@@ -7,7 +7,7 @@ def calcular_velocidade_media(distancia:float, tempo:float, unidade_medida="km/h
 
 #Função para converter a temperatura
 def converter_temperatura(temperatura:float, unidade_medida="celsius"):
-    if unidade_medida == "celcius":
+    if unidade_medida == "celsius":
         return temperatura * 1.8 + 32
     elif unidade_medida == "fahrenheit":
         return (temperatura - 32) / 1.8
