@@ -198,7 +198,8 @@ def agenda_para_json(nome_arquivo:str, agenda):
 
 
 def exibir_menu():
-    print("\n\n")
+    print("====== AGENDA DE CONTATOS ======")
+    print("\n")
     print("1 - Incluir contato na agenda")
     print("2 - Incluir uma forma de contato")
     print("3 - Alterar o nome de um contato")
@@ -210,14 +211,13 @@ def exibir_menu():
     print("9 - Exportar agenda para JSON")
     print("10 - Importar agenda de JSON")
     print("11 - Sair")
-    print("\n")
 
 def manipulador_agenda():
     agenda = {}
     op = 1
     while op != 11:
         exibir_menu()
-        op = int(input("Informe a opção desejada: "))
+        op = int(input("\nInforme a opção desejada: "))
         if op == 1:
             usuario_inclui_contato(agenda)
         elif op == 2:
