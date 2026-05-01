@@ -1,12 +1,6 @@
 import java.util.Scanner;
 import java.util.Locale;
 
-/*
-8. Conversor de unidades
-
-Converte temperatura (°C ↔ °F ↔ K), distância (km ↔ milhas), peso (kg ↔ lb)
-— menu com switch e cálculos com double.
-*/
 
 class Conversor{
     private String[] historico = new String[50];
