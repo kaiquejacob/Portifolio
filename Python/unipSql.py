@@ -234,7 +234,8 @@ while True:
         case "1":
             cadastrar_aluno()
         case "2":
-            ...
+            ra = input("Digite o RA do aluno: ")
+            cadastrar_materias(ra)
         case "3":
             mostrar_alunos()
         case "4":
