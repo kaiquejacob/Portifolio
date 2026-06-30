@@ -1,23 +1,21 @@
-# 🍽️ Sistema de Pedidos - Restaurante
+# 🏦 Sistema Bancário
 
-Sistema de gerenciamento de pedidos de restaurante via console, desenvolvido em Java.
+Sistema de gerenciamento de contas bancárias via console, desenvolvido em Java.
 
 ## Funcionalidades
 
-- Abrir pedido por mesa
-- Adicionar itens do cardápio ao pedido
-- Atualizar status do pedido
-- Visualizar pedido da mesa
-- Fechar e calcular total do pedido
+- Criar conta (Corrente, Poupança ou Investimento)
+- Depositar valores
+- Sacar valores
+- Ver extrato da conta
+- Listar todas as contas
 
 ## Conceitos aplicados
 
-- Herança e classes abstratas (`ItemCardapio` → `Prato`, `Bebida`, `Sobremesa`)
-- Interface (`Pagavel`)
-- Polimorfismo
-- Enumeração (`StatusPedido`, `CategoriaItem`)
+- Herança e classes abstratas (`ContaBancaria` → `ContaCorrente`, `ContaPoupanca`, `ContaInvestimento`)
+- Polimorfismo (`calcularExtrato()` com comportamento diferente em cada subclasse)
+- Enumeração (`TipoConta`)
 - Encapsulamento
-- Associação entre objetos
 
 ## Tecnologias
 
