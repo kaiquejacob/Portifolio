@@ -28,10 +28,9 @@ public class Pedido implements Pagavel {
     @Override
     public String toString() {
         return
-                "\n------ Mesa " + numeroMesa + " ------" +
-                "\nStatus - " + status +
-                "\nTotal - " + calcularTotal()+"\n"
-                ;
+                "\n📍 Mesa " + numeroMesa +
+                        "\n🔄 Status: " + status +
+                        "\n💰 Total: R$" + String.format("%.2f", calcularTotal()) + "\n";
     }
 
     public int getNumeroMesa() { return numeroMesa; }

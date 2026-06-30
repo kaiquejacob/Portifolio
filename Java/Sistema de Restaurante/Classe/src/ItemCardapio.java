@@ -12,10 +12,9 @@ public abstract class ItemCardapio {
     @Override
     public String toString() {
         return
-                "Nome: " + nome +
-                "  |  Preço = " + preco +
-                "  |  Categoria = " + categoria.nome
-                ;
+                "🍽️ " + nome +
+                        "  |  R$" + String.format("%.2f", preco) +
+                        "  |  " + categoria.nome;
     }
 
     public String getNome() {
