@@ -2,7 +2,7 @@
 
 <img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2500&pause=700&color=2F81F7&center=true&vCenter=true&width=700&lines=%5BSYSTEM%5D+PORTFOLIO+INITIALIZING...;%5BSYSTEM%5D+PROJECTS+LOADED;%5BSYSTEM%5D+JAVA+%7C+PYTHON+%7C+C+%7C+MYSQL" alt="Typing Animation">
 
-<img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:05070A,50:0B1F3A,100:061A36&text=KAÍQUE%20JACOB&fontSize=42&fontColor=E6F1FF&fontAlignY=40&desc=PORTFOLIO%20%7C%20DEVELOPMENT%20JOURNEY&descAlignY=65&descSize=15" width="100%" alt="Banner">
+<img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:05070A,50:0B1F3A,100:061A36&text=PORTFOLIO&fontSize=42&fontColor=E6F1FF&fontAlignY=40&desc=KAÍQUE%20JACOB%20%7C%20DEVELOPMENT%20JOURNEY&descAlignY=65&descSize=15" width="100%" alt="Banner">
 
 </div>
 
@@ -71,6 +71,9 @@ Portifolio/
     └── sistema-bancario/
 ```
 
+> Ajuste os nomes de pasta acima para bater exatamente com os do seu repositório — os links das tabelas acima assumem esses caminhos.
+
+---
 
 ## `04 // TECNOLOGIAS`
 
