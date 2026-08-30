@@ -110,7 +110,6 @@ Projects : ONLINE
 Languages: JAVA / PYTHON / C / SQL
 Focus    : BACK-END DEVELOPMENT
 
-> keep_building();
 ```
 
 <a href="https://github.com/kaiquejacob">
