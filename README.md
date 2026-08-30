@@ -1,96 +1,117 @@
-# 🗂️ Portfólio — Kaíque Jacob
+<div align="center">
 
-<p align="center">
-  <img src="https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=openjdk&logoColor=white" />
-  <img src="https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white" />
-  <img src="https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white" />
-  <img src="https://img.shields.io/badge/MySQL-4479A1?style=for-the-badge&logo=mysql&logoColor=white" />
-</p>
+<img src="https://readme-typing-svg.demolab.com?font=JetBrains+Mono&weight=600&size=18&duration=2500&pause=700&color=2F81F7&center=true&vCenter=true&width=700&lines=%5BSYSTEM%5D+PORTFOLIO+INITIALIZING...;%5BSYSTEM%5D+PROJECTS+LOADED;%5BSYSTEM%5D+JAVA+%7C+PYTHON+%7C+C+%7C+MYSQL" alt="Typing Animation">
 
-<p align="center">
-  Coleção dos meus principais projetos e exercícios desenvolvidos durante minha jornada como estudante de ADS.
-</p>
+<img src="https://capsule-render.vercel.app/api?type=waving&height=160&color=0:05070A,50:0B1F3A,100:061A36&text=KAÍQUE%20JACOB&fontSize=42&fontColor=E6F1FF&fontAlignY=40&desc=PORTFOLIO%20%7C%20DEVELOPMENT%20JOURNEY&descAlignY=65&descSize=15" width="100%" alt="Banner">
+
+</div>
 
 ---
 
-## 📁 Estrutura do repositório
+<div align="center">
 
-```
+![Java](https://img.shields.io/badge/Java-0B0F14?style=for-the-badge&logo=openjdk&logoColor=2F81F7)
+![Python](https://img.shields.io/badge/Python-0B0F14?style=for-the-badge&logo=python&logoColor=2F81F7)
+![C](https://img.shields.io/badge/C-0B0F14?style=for-the-badge&logo=c&logoColor=2F81F7)
+![MySQL](https://img.shields.io/badge/MySQL-0B0F14?style=for-the-badge&logo=mysql&logoColor=2F81F7)
+
+</div>
+
+## `01 // SOBRE`
+
+Repositório com projetos e exercícios desenvolvidos durante minha formação em **Análise e Desenvolvimento de Sistemas** (UNIP), com foco em lógica de programação, **Java, Python, C, SQL e Programação Orientada a Objetos**.
+
+---
+
+## `02 // PROJETOS`
+
+### ☕ Java
+
+| Projeto | Descrição | Stack / Conceitos |
+|---|---|---|
+| [Sistema Bancário](./Java/Sistema%20de%20Banco) | Contas Corrente, Poupança e Investimento | Herança, abstração, polimorfismo, enum |
+| [Sistema de Restaurante](./Java/Sistema%20de%20Restaurante) | Gerenciamento de pedidos | POO, interfaces, enums, associação entre objetos |
+| [Sistema de Concessionária](./Java/Sistema%20de%20Concessionaria) | Cadastro, busca, remoção e cálculo de preço médio de veículos | `ArrayList` |
+
+### 🐍 Python
+
+| Projeto | Descrição | Stack / Conceitos |
+|---|---|---|
+| [Sistema de Agenda](./Python/sistema_de_agenda.py) | CRUD de contatos com exportação/importação | TXT, JSON |
+| [Sistema Acadêmico](./Python/sistema_academico) | Cadastro de alunos, notas, médias e estatísticas | SQLite |
+
+### 🛢️ MySQL
+
+| Projeto | Descrição | Stack / Conceitos |
+|---|---|---|
+| [Sistema de Gestão de Biblioteca](./MySQL/biblioteca-mysql) | Modelagem relacional de biblioteca | PK, FK, JOINs, GROUP BY, HAVING, subconsultas |
+
+### ⚙️ C
+
+| Projeto | Descrição | Stack / Conceitos |
+|---|---|---|
+| [Sistema Bancário (C)](./C/sistema-bancario) | Projeto de fundamentos da linguagem | Lógica de programação, structs, ponteiros |
+
+---
+
+## `03 // ESTRUTURA`
+
+```text
 Portifolio/
-├── Python/     # Projetos e exercícios em Python
-├── Java/       # Projetos e exercícios em Java
-├── C/          # Exercícios de lógica em C
-└── MySQL/      # Projeto de banco de dados relacional
+├── Java/
+│   ├── Sistema de Banco/
+│   ├── Sistema de Restaurante/
+│   └── Sistema de Concessionaria/
+├── Python/
+│   ├── sistema_de_agenda.py
+│   └── sistema_academico/
+├── MySQL/
+│   └── biblioteca-mysql/
+└── C/
+    └── sistema-bancario/
 ```
 
----
 
-## 🛢️ MySQL
+## `04 // TECNOLOGIAS`
 
-Projeto desenvolvido para colocar em prática os principais conceitos de banco de dados relacional com MySQL.
+<div align="center">
 
-| Projeto | Descrição |
-|---|---|
-| [📚 Sistema de Gestão de Biblioteca](./MySQL/biblioteca-mysql/) | Banco de dados com 5 tabelas, JOINs, relatórios analíticos e diagrama ER |
+<img src="https://skillicons.dev/icons?i=java,python,c,mysql,git,github,vscode,idea&theme=dark" alt="Tech Stack">
 
----
-
-## ☕ Java
-
-Projetos desenvolvidos em Java com foco em Orientação a Objetos e lógica de programação.
-
-| Projeto | Descrição |
-|---|---|
-| [🚗 Concessionária](./Java/ConcessionariaApp.java) | Gerenciamento de frota com cadastro, busca, preço médio e remoção de veículos |
-| [🛒 Cadastro de Produtos](./Java/Projeto_cadastroProdutos.java) | Cadastro de produtos com busca por nome e identificação de maior/menor preço |
-| [🏦 Caixa Eletrônico](./Java/Projeto_caixa.java) | Simulação de caixa com saque, depósito e extrato com histórico de transações |
-| [🌡️ Conversor de Unidades](./Java/Projeto_conversorUnidades.java) | Conversor de temperatura, distância e peso com histórico da sessão |
+</div>
 
 ---
 
-## 🐍 Python
+## `05 // CONTATO`
 
-Exercícios e pequenos projetos desenvolvidos com Python, cobrindo desde os fundamentos até aplicações práticas.
+<div align="center">
 
-| Projeto | Descrição |
-|---|---|
-| [📒 Sistema de Agenda](./Python/sistema_de_agenda.py) | CRUD de contatos com persistência em JSON e exportação para TXT |
-| [🎓 Sistema Acadêmico UNIP](./Python/unip.py) | Cadastro de alunos e notas com cálculo de média ponderada e aprovação |
-| [⚡ Exercícios de Funções](./Python/funcao.py) | Calculadora de velocidade média e conversor de temperatura |
+<!-- Troque os links abaixo pelos seus -->
+<a href="https://www.linkedin.com/in/SEU-LINKEDIN">
+<img src="https://img.shields.io/badge/LINKEDIN-0B0F14?style=for-the-badge&logo=linkedin&logoColor=2F81F7" alt="LinkedIn">
+</a>
+<a href="mailto:seuemail@exemplo.com">
+<img src="https://img.shields.io/badge/EMAIL-0B0F14?style=for-the-badge&logo=gmail&logoColor=2F81F7" alt="Email">
+</a>
 
----
-
-## ⚙️ C
-
-Exercícios de lógica e fundamentos de programação em linguagem C.
-
-| Projeto | Descrição |
-|---|---|
-| [💰 Sistema Bancário](./C/sistema_bancario.c) | Controle financeiro com recebimentos, despesas, extrato e cálculo de IRPF |
+</div>
 
 ---
 
-## 🛠️ Tecnologias
+<div align="center">
 
-- **Java 17+**
-- **Python 3.x**
-- **C (GCC)**
-- **MySQL 8+**
-- Git & GitHub
+```text
+[SYSTEM STATUS]
 
----
+Projects : ONLINE
+Languages: JAVA / PYTHON / C / SQL
+Focus    : BACK-END DEVELOPMENT
 
-## 📌 Outros repositórios
+> keep_building();
+```
 
-| Repositório | Descrição |
-|---|---|
-| [☕ Evolução em Java](https://github.com/kaiquejacob/Evolucao-em-Java) | Minha evolução com Java |
-| [🐍 Aprendendo Python](https://github.com/kaiquejacob/Aprendendo-Python) | Minha evolução com Python |
-| [⚙️ Aprendendo C](https://github.com/kaiquejacob/Aprendendo-C) | Minha evolução com C |
+<a href="https://github.com/kaiquejacob">
+<img src="https://img.shields.io/badge/VISIT_MY_GITHUB-0B0F14?style=for-the-badge&logo=github&logoColor=2F81F7" alt="Visit GitHub">
+</a>
 
----
-
-<p align="center">
-  <a href="https://linkedin.com/in/kaique-jacob">LinkedIn</a> •
-  <a href="mailto:kaiquejacob975@gmail.com">Email</a>
-</p>
+</div>
