@@ -17,13 +17,13 @@
 
 </div>
 
-## `01 // SOBRE`
+## `SOBRE`
 
 Repositório com projetos e exercícios desenvolvidos durante minha formação em **Análise e Desenvolvimento de Sistemas** (UNIP), com foco em lógica de programação, **Java, Python, C, SQL e Programação Orientada a Objetos**.
 
 ---
 
-## `02 // PROJETOS`
+## `PROJETOS`
 
 ### ☕ Java
 
@@ -54,7 +54,7 @@ Repositório com projetos e exercícios desenvolvidos durante minha formação e
 
 ---
 
-## `03 // ESTRUTURA`
+## `ESTRUTURA`
 
 ```text
 Portifolio/
@@ -75,7 +75,7 @@ Portifolio/
 
 ---
 
-## `04 // TECNOLOGIAS`
+## `TECNOLOGIAS`
 
 <div align="center">
 
@@ -85,7 +85,7 @@ Portifolio/
 
 ---
 
-## `05 // CONTATO`
+## `CONTATO`
 
 <div align="center">
 
