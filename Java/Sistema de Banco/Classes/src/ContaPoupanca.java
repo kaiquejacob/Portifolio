@@ -1,7 +1,7 @@
 public class ContaPoupanca extends ContaBancaria{
 
-    public ContaPoupanca(String titular, double saldo) {
-        super(titular, saldo, TipoConta.POUPANCA);
+    public ContaPoupanca(String titular, double saldo, String cpf, String email) throws CpfInvalidoException, EmailInvalidoException {
+        super(titular, saldo, TipoConta.POUPANCA, cpf, email);
     }
 
     @Override

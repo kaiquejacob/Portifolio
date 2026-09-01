@@ -1,7 +1,7 @@
 public class ContaInvestimento extends ContaBancaria{
 
-    public ContaInvestimento(String titular, double saldo) {
-        super(titular, saldo, TipoConta.INVESTIMENTO);
+    public ContaInvestimento(String titular, double saldo, String cpf, String email) throws CpfInvalidoException, EmailInvalidoException {
+        super(titular, saldo, TipoConta.INVESTIMENTO, cpf, email);
     }
 
     @Override

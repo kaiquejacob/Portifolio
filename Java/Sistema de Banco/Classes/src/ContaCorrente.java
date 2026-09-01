@@ -1,7 +1,7 @@
 public class ContaCorrente extends ContaBancaria{
 
-    public ContaCorrente(String titular, double saldo) {
-        super(titular, saldo, TipoConta.CORRENTE);
+    public ContaCorrente(String titular, double saldo, String cpf, String email) throws CpfInvalidoException, EmailInvalidoException {
+        super(titular, saldo, TipoConta.CORRENTE, cpf, email);
     }
 
     @Override
@@ -12,9 +12,14 @@ public class ContaCorrente extends ContaBancaria{
     }
 
     @Override
-    public void sacar(double valor) {
-        super.sacar(valor);
-        super.sacar(10);
+    public void sacar(double valor) throws SaldoInsuficienteException {
+        if (getSaldo() >= valor + 10) {
+            super.sacar(valor);
+            super.sacar(10);
+        }else {
+            throw new SaldoInsuficienteException("Valor pedido para saque: " + valor + "\nSaldo disponivel: " + getSaldo() + "\nValor do saque com taxa: " + (valor + 10));
+        }
+
     }
 
 }
