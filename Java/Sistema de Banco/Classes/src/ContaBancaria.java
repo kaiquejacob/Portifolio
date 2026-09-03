@@ -1,9 +1,14 @@
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+
 public abstract class ContaBancaria {
     private String titular;
     private double saldo;
     private TipoConta tipoConta;
     private String cpf;
     private String email;
+    private LocalDate dataAbertura;
+
 
     public ContaBancaria(String titular, double saldo, TipoConta tipoConta, String cpf, String email) throws CpfInvalidoException, EmailInvalidoException {
         if (!Validador.validarCpf(cpf)){
@@ -18,6 +23,7 @@ public abstract class ContaBancaria {
         this.tipoConta = tipoConta;
         this.cpf = cpf;
         this.email = email;
+        this.dataAbertura = LocalDate.now();
     }
 
     public void depositar(double valor){
@@ -40,7 +46,12 @@ public abstract class ContaBancaria {
                 "\n💼 Tipo: " + tipoConta.nome +
                 "\n💵 Saldo: R$" + saldo +
                 "\n🆔 CPF: " + cpf +
-                "\n📧 Email: " + email;
+                "\n📧 Email: " + email +
+                "\n📅 Data de Abertura: " + dataAbertura.format(DateTimeFormatter.ofPattern("dd/MM/yyyy"));
+    }
+
+    public LocalDate getDataAbertura() {
+        return dataAbertura;
     }
 
     public String getCpf() {
