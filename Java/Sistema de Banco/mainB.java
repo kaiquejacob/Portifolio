@@ -6,6 +6,7 @@ public class mainB {
         Banco banco = new Banco("Banco");
         ContaBancaria conta = null;
 
+        banco.carregar();
         int opcao = 0;
         while (opcao != 7) {
             System.out.println("\n╔══════════════════════════╗");
@@ -66,7 +67,7 @@ public class mainB {
                         break;
                     }
 
-
+                    banco.salvar();
                     System.out.println("Conta iniciado com sucesso! ");
                     break;
 
@@ -81,9 +82,12 @@ public class mainB {
                         double valorDepositar = scanner.nextDouble();
                         conta.depositar(valorDepositar);
                         System.out.println("Depósito realizado com sucesso!");
+                        banco.salvar();
+
                     } catch (ContaNaoEncontradaException e) {
                         System.out.println(e.getMessage());
                     }
+
                     break;
 
                 case 3:
@@ -97,10 +101,12 @@ public class mainB {
                         double valorSacar = scanner.nextDouble();
                         conta.sacar(valorSacar);
                         System.out.println("Saque realizado com sucesso!");
+                        banco.salvar();
 
                     } catch (ContaNaoEncontradaException | SaldoInsuficienteException e) {
                         System.out.println(e.getMessage());
                     }
+
                     break;
 
                 case 4:
@@ -138,10 +144,12 @@ public class mainB {
                     try {
                         banco.removerConta(cpf);
                         System.out.println("Conta removida com sucesso!");
+                        banco.salvar();
 
                     }catch (ContaNaoEncontradaException | ContaComSaldoException e){
                         System.out.println(e.getMessage());
                     }
+
                     break;
                 case 7:
                     break;

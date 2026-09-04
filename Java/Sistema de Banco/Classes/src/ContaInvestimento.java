@@ -1,7 +1,13 @@
+import java.time.LocalDate;
+
 public class ContaInvestimento extends ContaBancaria{
 
     public ContaInvestimento(String titular, double saldo, String cpf, String email) throws CpfInvalidoException, EmailInvalidoException {
         super(titular, saldo, TipoConta.INVESTIMENTO, cpf, email);
+    }
+
+    public ContaInvestimento(String titular, double saldo, String cpf, String email, LocalDate dataAbertura) throws CpfInvalidoException, EmailInvalidoException {
+        super(titular, saldo, TipoConta.INVESTIMENTO, cpf, email, dataAbertura);
     }
 
     @Override

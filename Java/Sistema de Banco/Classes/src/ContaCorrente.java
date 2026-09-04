@@ -1,7 +1,13 @@
+import java.time.LocalDate;
+
 public class ContaCorrente extends ContaBancaria{
 
     public ContaCorrente(String titular, double saldo, String cpf, String email) throws CpfInvalidoException, EmailInvalidoException {
         super(titular, saldo, TipoConta.CORRENTE, cpf, email);
+    }
+
+    public ContaCorrente(String titular, double saldo, String cpf, String email, LocalDate dataAbertura) throws CpfInvalidoException, EmailInvalidoException {
+        super(titular, saldo, TipoConta.CORRENTE, cpf, email, dataAbertura);
     }
 
     @Override

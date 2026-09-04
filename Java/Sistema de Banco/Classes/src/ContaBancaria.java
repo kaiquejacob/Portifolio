@@ -26,6 +26,22 @@ public abstract class ContaBancaria {
         this.dataAbertura = LocalDate.now();
     }
 
+    public ContaBancaria(String titular, double saldo, TipoConta tipoConta, String cpf, String email, LocalDate dataAbertura) throws CpfInvalidoException, EmailInvalidoException {
+        if (!Validador.validarCpf(cpf)){
+            throw new CpfInvalidoException("O CPF " + cpf + " é inválido!");
+        }
+        if (!Validador.validarEmail(email)){
+            throw new EmailInvalidoException("O Email " + email + " é inválido!");
+        }
+
+        this.titular = titular;
+        this.saldo = saldo;
+        this.tipoConta = tipoConta;
+        this.cpf = cpf;
+        this.email = email;
+        this.dataAbertura = dataAbertura;
+    }
+
     public void depositar(double valor){
         this.saldo += valor;
     }
