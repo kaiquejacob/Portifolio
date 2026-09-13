@@ -21,7 +21,7 @@ public abstract class ContaBancaria {
         this.titular = titular;
         this.saldo = saldo;
         this.tipoConta = tipoConta;
-        this.cpf = cpf;
+        this.cpf = Validador.normalizarCpf(cpf);
         this.email = email;
         this.dataAbertura = LocalDate.now();
     }
@@ -37,7 +37,7 @@ public abstract class ContaBancaria {
         this.titular = titular;
         this.saldo = saldo;
         this.tipoConta = tipoConta;
-        this.cpf = cpf;
+        this.cpf = Validador.normalizarCpf(cpf);
         this.email = email;
         this.dataAbertura = dataAbertura;
     }

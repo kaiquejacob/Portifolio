@@ -28,7 +28,7 @@ public class mainB {
                     System.out.println("\n--- 📝 Criar Conta ---");
                     System.out.print("Nome do titular: ");
                     scanner.nextLine();                                              // limpa o buffer
-                    String nomeTitular = scanner.nextLine();
+                        String nomeTitular = scanner.nextLine();
                     if (!Validador.validarNome(nomeTitular)) {
                         System.out.println("Nome inválido! ");
                         break;
@@ -76,6 +76,7 @@ public class mainB {
                     System.out.print("CPF do titular: ");
                     scanner.nextLine();
                     cpf = scanner.nextLine();
+                    cpf = Validador.normalizarCpf(cpf);
                     try {
                         conta = banco.buscarConta(cpf);
                         System.out.print("Valor a depositar: R$");
@@ -95,6 +96,7 @@ public class mainB {
                     System.out.print("CPF do titular: ");
                     scanner.nextLine();                                                   // limpa o buffer
                     cpf = scanner.nextLine();
+                    cpf = Validador.normalizarCpf(cpf);
                     try {
                         conta = banco.buscarConta(cpf);
                         System.out.print("Valor a sacar: R$");
@@ -114,6 +116,7 @@ public class mainB {
                     System.out.print("CPF do titular: ");
                     scanner.nextLine();                                                   // limpa o buffer
                     cpf = scanner.nextLine();
+                    cpf = Validador.normalizarCpf(cpf);
                     try {
                         conta = banco.buscarConta(cpf);
                         conta.calcularExtrato();
@@ -125,13 +128,12 @@ public class mainB {
 
                 case 5:
                     System.out.println("\n--- 📋 Todas as Contas ---");
-                    ContaBancaria[] contas = banco.getContas();
                     if (banco.getQuantidadeContas() == 0) {
                         System.out.println("Nenhuma conta cadastrada.");
                         break;
                     }
-                    for (int i = 0; i < banco.getQuantidadeContas(); i++) {
-                        System.out.println(contas[i]);
+                    for (ContaBancaria contas : banco.getContas() ) {
+                        System.out.println(contas);
                     }
                     break;
 
@@ -140,7 +142,7 @@ public class mainB {
                     System.out.print("CPF do titular: ");
                     scanner.nextLine();
                     cpf = scanner.nextLine();
-
+                    cpf = Validador.normalizarCpf(cpf);
                     try {
                         banco.removerConta(cpf);
                         System.out.println("Conta removida com sucesso!");

@@ -9,7 +9,7 @@ public class Validador {
     }
 
     public static boolean validarCpf(String cpf) {
-        cpf = cpf.replace(".", "").replace("-", "");
+        cpf = normalizarCpf(cpf);
 
         if (cpf.length() != 11) {
             return false;
@@ -64,6 +64,10 @@ public class Validador {
         int digitoReal2 = Character.getNumericValue(cpf.charAt(10));
 
         return (digitoVerificador == digitoReal1) && (digitoVerificador2 == digitoReal2);
+    }
+
+    public static String normalizarCpf(String cpf) {
+        return cpf.replace(".", "").replace("-", "");
     }
 
     public static boolean validarEmail(String email){
