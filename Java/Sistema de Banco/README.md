@@ -16,7 +16,7 @@
 
 </div>
 
-## SOBRE`
+## `01 // SOBRE`
 
 Sistema de gerenciamento de contas bancárias via console, desenvolvido em **Java**. Permite criar contas (Corrente, Poupança ou Investimento), depositar, sacar, consultar extrato, listar e remover contas — com validação de dados, tratamento de exceções customizadas e persistência em arquivo, garantindo que os dados sobrevivam ao encerrar o programa.
 
@@ -24,7 +24,7 @@ Projeto usado como aplicação prática dos conceitos estudados na Maratona Java
 
 ---
 
-## CONCEITOS APLICADOS`
+## `02 // CONCEITOS APLICADOS`
 
 ```text
 SISTEMA BANCÁRIO
@@ -40,13 +40,16 @@ SISTEMA BANCÁRIO
 [✓] Data de abertura da conta (LocalDate + DateTimeFormatter)
 [✓] Persistência de dados em arquivo (IO: BufferedReader/BufferedWriter + try-with-resources)
 [✓] Sobrecarga de construtor (preservação de dados originais ao recarregar)
+[✓] Coleções — LinkedHashMap como estrutura de armazenamento (CPF como chave)
+[✓] Normalização de CPF (busca funciona com ou sem pontuação)
+[✓] Ordenação de listagem com Comparator (saldo decrescente)
 
 [→] Próximos módulos e melhorias
 ```
 
 ---
 
-## FUNCIONALIDADES`
+## `03 // FUNCIONALIDADES`
 
 | Operação | Descrição |
 |---|---|
@@ -59,7 +62,7 @@ SISTEMA BANCÁRIO
 
 ---
 
-## EXCEÇÕES CUSTOMIZADAS`
+## `04 // EXCEÇÕES CUSTOMIZADAS`
 
 | Exceção | Motivo |
 |---|---|
@@ -74,7 +77,7 @@ Todas checked — representam condições esperadas do domínio bancário, não 
 
 ---
 
-## PERSISTÊNCIA`
+## `05 // PERSISTÊNCIA`
 
 Os dados são salvos em `contas.txt`, um registro por linha, campos separados por `;`:
 
@@ -86,39 +89,36 @@ CORRENTE;João Silva;1500.0;12345678900;joao@gmail.com;2026-09-03
 - **Carregamento**: ocorre uma única vez, ao iniciar o programa, reconstruindo todas as contas salvas.
 - Implementado com `BufferedWriter`/`BufferedReader` dentro de blocos **try-with-resources**, sem dependências externas.
 - A data de abertura original é preservada entre execuções por meio de um construtor sobrecarregado em `ContaBancaria`.
+- Internamente, as contas são armazenadas em um `LinkedHashMap<String, ContaBancaria>` (CPF como chave), garantindo busca em O(1) e preservando a ordem de criação ao listar.
 
 ---
 
-## ESTRUTURA`
+## `06 // ESTRUTURA`
 
 ```text
 Sistema de Banco/
-├── Classes/
-│   └── src/
-│       ├── Banco.java
-│       ├── ContaBancaria.java
-│       ├── ContaCorrente.java
-│       ├── ContaPoupanca.java
-│       ├── ContaInvestimento.java
-│       └── Validador.java
-├── Exception/
-│   └── src/
-│       ├── SaldoInsuficienteException.java
-│       ├── ContaNaoEncontradaException.java
-│       ├── CpfInvalidoException.java
-│       ├── EmailInvalidoException.java
-│       ├── CpfJaCadastradoException.java
-│       └── ContaComSaldoException.java
-├── Enum/
-│   └── src/
-│       └── TipoConta.java
-├── mainB.java
+├── src/
+│   ├── Banco.java
+│   ├── ContaBancaria.java
+│   ├── ContaCorrente.java
+│   ├── ContaPoupanca.java
+│   ├── ContaInvestimento.java
+│   ├── Validador.java
+│   ├── TipoConta.java
+│   ├── mainB.java
+│   ├── SaldoInsuficienteException.java
+│   ├── ContaNaoEncontradaException.java
+│   ├── CpfInvalidoException.java
+│   ├── EmailInvalidoException.java
+│   ├── CpfJaCadastradoException.java
+│   └── ContaComSaldoException.java
+├── .gitignore
 └── README.md
 ```
 
 ---
 
-## TECNOLOGIAS`
+## `07 // TECNOLOGIAS`
 
 <div align="center">
 
@@ -139,6 +139,8 @@ Focus     : EXCEPTIONS, VALIDATION & PERSISTENCE
 Modules   : OOP, REGEX, CUSTOM EXCEPTIONS, IO
 Status    : EVOLVING
 
+> keep_learning();
+> keep_building();
 ```
 
 <a href="https://github.com/kaiquejacob">
