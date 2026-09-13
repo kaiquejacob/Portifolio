@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.Comparator;
+import java.util.List;
 import java.util.Scanner;
 
 public class mainB {
@@ -28,7 +31,7 @@ public class mainB {
                     System.out.println("\n--- 📝 Criar Conta ---");
                     System.out.print("Nome do titular: ");
                     scanner.nextLine();                                              // limpa o buffer
-                        String nomeTitular = scanner.nextLine();
+                    String nomeTitular = scanner.nextLine();
                     if (!Validador.validarNome(nomeTitular)) {
                         System.out.println("Nome inválido! ");
                         break;
@@ -132,7 +135,9 @@ public class mainB {
                         System.out.println("Nenhuma conta cadastrada.");
                         break;
                     }
-                    for (ContaBancaria contas : banco.getContas() ) {
+                    List<ContaBancaria> listaContas = new ArrayList<>(banco.getContas());
+                    listaContas.sort(Comparator.comparingDouble(ContaBancaria::getSaldo).reversed());
+                    for (ContaBancaria contas : li) {
                         System.out.println(contas);
                     }
                     break;
@@ -148,7 +153,7 @@ public class mainB {
                         System.out.println("Conta removida com sucesso!");
                         banco.salvar();
 
-                    }catch (ContaNaoEncontradaException | ContaComSaldoException e){
+                    } catch (ContaNaoEncontradaException | ContaComSaldoException e) {
                         System.out.println(e.getMessage());
                     }
 
